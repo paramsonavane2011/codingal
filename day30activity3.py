@@ -1,14 +1,9 @@
-class Computer():
-    def __init__(self):
-        self.__maxPrice = 69
-    def price(self):
-        print(self.__maxPrice)
-    def setMaxPrice(self, price):
-        self.__maxPrice = price
-    
-com = Computer()
-com.price()
-com.setMaxPrice(70)
-com.price()
-com.__maxPrice = 71
-com.price()
+class Point():
+    def __init__(self, x=0, y=0):
+        self.x = x
+        self.y = y
+    def __str__(self):
+        return f"{self.x}, {self.y}"
+
+point = Point(2, 3)
+print(point)
